@@ -20,11 +20,11 @@ else:
 to_rgb_to_grayscale = True
 
 input_dir = os.path.join(resources.workspace_dir, 'data', 'grusi', 'figures_all_smoothing5')
-output_dir = os.path.join(resources.workspace_dir, 'data', 'grusi', 'figures_grayscale')
+output_dir = os.path.join(resources.workspace_dir, 'data', 'grusi', 'figures_100x100')
 tmp_dir = os.path.join(resources.workspace_dir, 'tmp')
 log_file = os.path.join(tmp_dir, 'grusi', 'run_logs.log')
 
-resize_shape = (28, 28)
+resize_shape = (100, 100)
 
 # booleans
 to_invert_image = True
@@ -52,7 +52,8 @@ def rgb_to_grayscale(m_input_dir=input_dir, m_resize_shape=resize_shape):
                         os.mkdir(this_output_dir)
                     if file.endswith('jpeg'):
                         in_file = os.path.join(m_input_dir, folder, file)
-                        gray_image = Image.open(in_file).convert('L')
+                        # gray_image = Image.open(in_file).convert('L')
+                        gray_image = Image.open(in_file)
                         gray_image = gray_image.resize(m_resize_shape)
                         if to_invert_image:
                             gray_image = ImageOps.invert(gray_image)

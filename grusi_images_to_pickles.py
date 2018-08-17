@@ -17,6 +17,7 @@ import datetime
 import random
 import platform
 import datetime as dt
+import numpy as np
 
 if platform.system() == 'Windows':
     import resources_windows as resources
@@ -24,7 +25,8 @@ else:
     import resources_unix as resources
 
 # resources
-input_dir = os.path.join(resources.workspace_dir, 'data', 'grusi', 'figures_100x100')
+# input_dir = os.path.join(resources.workspace_dir, 'data', 'grusi', 'figures_28x28')
+input_dir = "C:\\Users\\ppaudyal\\workspace\\GRUSI\\data\\asl\\images_orns"
 dir_image_splits = os.path.join(resources.workspace_dir, 'data', 'grusi', 'split')
 tmp_dir = os.path.join(resources.workspace_dir, 'tmp', 'grusi')
 log_file = os.path.join(tmp_dir, 'run_logs.log')
@@ -34,7 +36,7 @@ is_color_images = True
 
 train_pickle_name = 'train_data'
 test_pickle_name = 'test_data'
-img_size = 100
+img_size = 200
 
 # booleans
 to_split_train_test = False  # this is not necessary anymore, creating pickles now
@@ -91,7 +93,7 @@ def get_classes_and_users(m_input_dir):
         if this_class not in all_classes:
             all_classes.append(this_class)
         for img in os.listdir(os.path.join(m_input_dir, folder)):
-            this_user = img.split('_')[2]
+            this_user = img.split('_')[0]
             if this_user not in all_users:
                 all_users.append(this_user)
     return all_classes, all_users
@@ -125,7 +127,7 @@ def create_train_test_pickles(m_input_dir=input_dir, hm_train=1000, hm_test=100)
 
     start = datetime.datetime.now()
 
-    pickle_path = os.path.join(tmp_dir, str(img_size) + '_pickles')
+    pickle_path = os.path.join(tmp_dir, str(img_size) + 'bones_pickles')
     if not os.path.exists(pickle_path):
         os.mkdir(pickle_path)
 
@@ -137,7 +139,7 @@ def create_train_test_pickles(m_input_dir=input_dir, hm_train=1000, hm_test=100)
         for file in file_list:
             if file.endswith('.jpeg') or file.endswith('.png'):
                 all_files_with_path.append(os.path.join(dirs, file))
-                m_classes.append(file.split('_')[0])
+                m_classes.append(os.path.basename(dirs))
 
     combined = list(zip(all_files_with_path, m_classes))
     random.shuffle(combined)
@@ -145,16 +147,17 @@ def create_train_test_pickles(m_input_dir=input_dir, hm_train=1000, hm_test=100)
 
 
     for im_file, im_class in combined:
-        this_y = [0] * len(all_classes)
+        this_y = np.zeros(len(all_classes))
         this_y[all_classes.index(im_class)] += 1 # 1-hot
-
-        this_user = im_file.split('_')[-3]
+        k = os.path.basename(im_file)
+        this_user = k.split('_')[0]
 
         img = Image.open(im_file)
         this_x = list(img.getdata())
         if is_color_images:
-            r, g, b = zip(*this_x)
-            this_x = list(r) + list(g) + list(b)
+            # r, g, b = zip(*this_x)
+            this_x = np.array(this_x)
+            this_x = np.multiply(this_x, 1.0 / 255.0)
         img_size = len(this_x)
         if this_user in train_users:
             train_counter += 1

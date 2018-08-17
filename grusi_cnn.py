@@ -36,6 +36,9 @@ import platform
 import os
 import math
 import shutil
+import random
+
+# import cv2
 
 if platform.system() == 'Windows':
     import resources_windows as resources
@@ -53,8 +56,8 @@ else:
 # which_model_to_run = 'cnn'
 which_model_to_run = 'cnn'
 
-hm_epochs = 4000
-batch_size = 16
+hm_epochs = 400
+batch_size = 8
 chunk_size = 500  # this is dynamically set from data_size assuming square images
 n_chunks = 500  # this is dynamically set from data size assuming square images
 rnn_size = 128
@@ -74,12 +77,14 @@ to_validate = True
 to_clear_previous_models = True
 is_color_images = True
 
+test_limits = 200
+
 if is_color_images:
     channels = 3  # change this
 else:
     channels = 1
 
-x = tf.placeholder('float', [None, image_width, image_height])
+x = tf.placeholder('float', [None, image_width, image_height, channels])
 y = tf.placeholder('float')
 global_step = tf.train.get_or_create_global_step()
 
@@ -90,12 +95,17 @@ else:
 if not os.path.exists(models_dir):
     os.mkdir(models_dir)
 
-pickles_path = os.path.join(tmp_dir, '100_pickles')
+pickles_path = os.path.join(tmp_dir, '200_orn_pickles')
 train_pickle_name = 'train_data.pickle'
 test_pickle_name = 'test_data.pickle'
 
 keep_rate = 0.8
 keep_prob = tf.placeholder(tf.float32)
+
+total_parameters = 0
+tst = tf.placeholder(tf.bool)
+iter = tf.placeholder(tf.int32)
+tf.set_random_seed(4)
 
 
 def conv2d(x, W):
@@ -107,32 +117,47 @@ def maxpool2d(x):
     return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
 
-def cnn_model(x):
-    weights = {'W_conv1': tf.Variable(tf.random_normal([5, 5, 3, 32])),
-               'W_conv2': tf.Variable(tf.random_normal([5, 5, 32, 64])),
-               'W_conv3': tf.Variable(tf.random_normal([5, 5, 64, 132])),
-               # 'W_fc': tf.Variable(tf.random_normal([8 * 8 * 64, 1024])),
-               'out': tf.Variable(tf.random_normal([1024, n_classes]))}
 
-    biases = {'b_conv1': tf.Variable(tf.random_normal([32])),
-              'b_conv2': tf.Variable(tf.random_normal([64])),
-              'b_conv3': tf.Variable(tf.random_normal([132])),
-              'b_fc': tf.Variable(tf.random_normal([1024])),
-              'out': tf.Variable(tf.random_normal([n_classes]))}
+
+
+def cnn_model(x):
+    global total_parameters
+
+    A = 32
+    B = 64
+    C = 132
+    D = 1024
+
+    weights = {'W_conv1': tf.Variable(tf.truncated_normal([6, 6, channels, A], stddev=0.1)),
+               'W_conv2': tf.Variable(tf.truncated_normal([5, 5, A, B], stddev=0.1)),
+               'W_conv3': tf.Variable(tf.truncated_normal([3, 3, B, C], stddev=0.1)),
+               # 'W_fc': tf.Variable(tf.random_normal([8 * 8 * 64, 1024])),
+               'out': tf.Variable(tf.truncated_normal([D, n_classes], stddev=0.1))}
+
+    biases = {'b_conv1': tf.Variable(tf.constant(0.1, tf.float32, [A])),
+              'b_conv2': tf.Variable(tf.constant(0.1, tf.float32, [B])),
+              'b_conv3': tf.Variable(tf.constant(0.1, tf.float32, [C])),
+              'b_fc': tf.Variable(tf.constant(0.1, tf.float32, [D])),
+              'out': tf.Variable(tf.constant(0.1, tf.float32, [n_classes]))}
 
     x = tf.reshape(x, shape=[-1, image_width, image_height, channels])
 
-    conv1 = tf.nn.relu(conv2d(x, weights['W_conv1']) + biases['b_conv1'])
+    conv1 = conv2d(x, weights['W_conv1']) + biases['b_conv1']
+    # conv1, update_ema1 = batchnorm(conv1, tst, iter, biases['b_conv1'])
     conv1 = maxpool2d(conv1)
 
     conv2 = tf.nn.relu(conv2d(conv1, weights['W_conv2']) + biases['b_conv2'])
+    # conv2, update_ema2 = batchnorm(conv2, tst, iter, biases['b_conv1'])
     conv2 = maxpool2d(conv2)
 
     conv3 = tf.nn.relu(conv2d(conv2, weights['W_conv3']) + biases['b_conv3'])
+    # conv3, update_ema3 = batchnorm(conv2, tst, iter, biases['b_conv1'])
     conv3 = maxpool2d(conv3)
 
     fc_shape = int(conv3.get_shape().as_list()[1] * conv3.get_shape().as_list()[2] * conv3.get_shape().as_list()[3])
     weights['W_fc'] = tf.Variable(tf.random_normal([fc_shape, 1024]))
+
+    # update_ema = tf.group(update_ema1, update_ema2, update_ema3)
 
     fc = tf.reshape(conv3, [-1, fc_shape])
     fc = tf.nn.relu(tf.matmul(fc, weights['W_fc']) + biases['b_fc'])
@@ -172,8 +197,8 @@ def get_globals_from_test_file():
         chunk_size = n_chunks
         n_classes = len(test_y[0])
         if is_color_images:
-            image_width = int(math.sqrt(len(test_x[0]) / 3)) * 3
-            image_height = int(math.sqrt(len(test_x[0]) / 3))
+            image_width = int(math.sqrt(len(test_x[0])))
+            image_height = int(math.sqrt(len(test_x[0])))
         else:
             image_height = chunk_size
             image_width = image_height
@@ -188,6 +213,7 @@ def train_neural_network(x):
     # OLD VERSION:
     # cost = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits(prediction,y) )
     # NEW:
+    learning_rate = tf.placeholder(tf.float32, shape=[])
     cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=y))
     optimizer = tf.train.AdamOptimizer().minimize(cost, global_step=global_step)
 
@@ -203,13 +229,16 @@ def train_neural_network(x):
     train_pickle_file_counter = 0
     with open(os.path.join(pickles_path, train_pickles[train_pickle_file_counter]), 'rb') as f:
         train_x, train_y = pickle.load(f)
-
+        if is_color_images:
+            pass
     # tf.reset_default_graph()
 
     correct = tf.equal(tf.argmax(prediction, 1), tf.argmax(y, 1))
     accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
 
     saver = tf.train.Saver()
+    annealed = False
+    annealer = 25000
 
     with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess:
         # with tf.Session() as sess:
@@ -245,7 +274,7 @@ def train_neural_network(x):
                 model_validation_x = np.array(test_x)
                 model_validation_y = np.array(test_y)
                 tn_accuracy = accuracy.eval(
-                    {x: model_validation_x.reshape(-1, image_height, image_width), y: model_validation_y})
+                    {x: model_validation_x.reshape(-1, image_height, image_width, channels), y: model_validation_y})
                 print('The previous model at epoch', epoch, 'had a test accuracy of: ', tn_accuracy)
 
                 print('starting at epoch: ', epoch)
@@ -255,7 +284,7 @@ def train_neural_network(x):
                 epoch = 0
         else:
             epoch = 0
-
+        lr_rate = 0.005
         while epoch < hm_epochs:
             # saved_epoch =tf.train.global_step(sess, global_step)
             epoch += 1
@@ -263,12 +292,12 @@ def train_neural_network(x):
 
             if epoch != 1:
                 if epoch % 10 == 0:
-                    model_validation_x = np.array(test_x)
-                    model_validation_y = np.array(test_y)
+                    model_validation_x = np.array(test_x)[0:test_limits]
+                    model_validation_y = np.array(test_y)[0:test_limits]
                     correct = tf.equal(tf.argmax(prediction, 1), tf.argmax(y, 1))
                     accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
                     tn_accuracy = accuracy.eval(
-                        {x: model_validation_x.reshape(-1, image_width, image_height), y: model_validation_y})
+                        {x: model_validation_x.reshape(-1, image_width, image_height, channels), y: model_validation_y,})
                     print('The model at epoch', epoch, 'had a test accuracy of: ', tn_accuracy)
 
             epoch_loss = 0
@@ -299,13 +328,19 @@ def train_neural_network(x):
                     batch_y = np.array(train_y[batch_start_marker:batch_end_marker])
                     # reshape epoch_x
                     m_batch_size = len(batch_x)
-                    batch_x = batch_x.reshape((m_batch_size, image_width, image_height))
+                    batch_x = batch_x.reshape((m_batch_size, image_width, image_height, channels))
 
+                    steps = tf.train.global_step(sess, global_step)
+                    if steps > annealer:
+                        lr_rate /= 10
+                        annealer += annealer
+                        print('Changing learning rate to ', lr_rate)
                     _, c = sess.run([optimizer, cost], feed_dict={x: batch_x, y: batch_y})
                     epoch_loss += c
                     batch_start_marker = batch_end_marker
 
-            print('Epoch', epoch, 'completed out of', hm_epochs, 'loss:', epoch_loss)
+            print('Epoch', epoch, 'completed out of', hm_epochs, 'loss:',
+                  epoch_loss)
 
             # save model
             if to_save_models:
@@ -317,14 +352,14 @@ def train_neural_network(x):
         end_t = dt.datetime.now()
         print('Total time for training: ', str(end_t - start_t), 'for :', int(len(train_x) / batch_size), 'batches')
 
-        validate_x = np.array(train_x)
-        validate_y = np.array(train_y)
-        tn_accuracy = accuracy.eval({x: validate_x.reshape(-1, image_width, image_height), y: validate_y})
+        validate_x = np.array(train_x)[0:test_limits]
+        validate_y = np.array(train_y)[0:test_limits]
+        tn_accuracy = accuracy.eval({x: validate_x.reshape(-1, image_width, image_height, channels), y: validate_y})
         print('Train Accuracy:', tn_accuracy)
 
-        test_x = np.array(test_x)
-        test_y = np.array(test_y)
-        test_accuracy = accuracy.eval({x: test_x.reshape(-1, image_width, image_height), y: test_y})
+        test_x = np.array(test_x)[0:test_limits]
+        test_y = np.array(test_y)[0:test_limits]
+        test_accuracy = accuracy.eval({x: test_x.reshape(-1, image_width, image_height, channels), y: test_y})
         print('User Independent Test Accuracy:', test_accuracy)
 
         with open(log_file, 'a') as m_log:
@@ -344,7 +379,7 @@ def train_neural_network(x):
 if __name__ == '__main__':
     if to_get_globals_from_test_file:
         get_globals_from_test_file()
-        x = tf.placeholder('float', [None, image_width, image_height])
+        x = tf.placeholder('float', [None, image_width, image_height, channels])
         y = tf.placeholder('float')
     if to_clear_previous_models:
         try:

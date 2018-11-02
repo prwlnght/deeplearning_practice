@@ -56,8 +56,8 @@ else:
 # which_model_to_run = 'cnn'
 which_model_to_run = 'cnn'
 
-hm_epochs = 400
-batch_size = 8
+hm_epochs = 1500
+batch_size = 32
 chunk_size = 500  # this is dynamically set from data_size assuming square images
 n_chunks = 500  # this is dynamically set from data size assuming square images
 rnn_size = 128
@@ -71,13 +71,14 @@ to_test_network = False
 to_log_results = True
 to_print_train_accuracy = True
 to_get_globals_from_test_file = True
-to_save_models = False
+to_save_models = True
 to_load_previous_models = False
 to_validate = True
 to_clear_previous_models = True
 is_color_images = True
+to_batch_normalize = True
 
-test_limits = 200
+test_limits = 50
 
 if is_color_images:
     channels = 3  # change this
@@ -95,7 +96,7 @@ else:
 if not os.path.exists(models_dir):
     os.mkdir(models_dir)
 
-pickles_path = os.path.join(tmp_dir, '200_orn_pickles')
+pickles_path = os.path.join(tmp_dir, '224_pickles')
 train_pickle_name = 'train_data.pickle'
 test_pickle_name = 'test_data.pickle'
 
@@ -103,9 +104,12 @@ keep_rate = 0.8
 keep_prob = tf.placeholder(tf.float32)
 
 total_parameters = 0
-tst = tf.placeholder(tf.bool)
-iter = tf.placeholder(tf.int32)
+epsilon = 1e-3
+# tst = tf.placeholder(tf.bool)
+# iter = tf.placeholder(tf.int32)
 tf.set_random_seed(4)
+
+
 
 
 def conv2d(x, W):
@@ -119,13 +123,12 @@ def maxpool2d(x):
 
 
 
-
 def cnn_model(x):
     global total_parameters
 
     A = 32
     B = 64
-    C = 132
+    C = 64
     D = 1024
 
     weights = {'W_conv1': tf.Variable(tf.truncated_normal([6, 6, channels, A], stddev=0.1)),
@@ -143,18 +146,40 @@ def cnn_model(x):
     x = tf.reshape(x, shape=[-1, image_width, image_height, channels])
 
     conv1 = conv2d(x, weights['W_conv1']) + biases['b_conv1']
-    # conv1, update_ema1 = batchnorm(conv1, tst, iter, biases['b_conv1'])
+
+    if to_batch_normalize:
+        batch_mean1, batch_var1 = tf.nn.moments(conv1, [0])
+        scale1 = tf.Variable(tf.ones([A]))
+        beta1 = tf.Variable(tf.zeros([A]))
+        BN1 = tf.nn.batch_normalization(conv1, batch_mean1, batch_var1, beta1, scale1, epsilon)
+        # conv1 = tf.nn.sigmoid(BN1)
+    conv1 = tf.nn.relu(conv1)
     conv1 = maxpool2d(conv1)
 
-    conv2 = tf.nn.relu(conv2d(conv1, weights['W_conv2']) + biases['b_conv2'])
-    # conv2, update_ema2 = batchnorm(conv2, tst, iter, biases['b_conv1'])
+    conv2 = conv2d(conv1, weights['W_conv2']) + biases['b_conv2']
+    if to_batch_normalize:
+        batch_mean2, batch_var2 = tf.nn.moments(conv2, [0])
+        scale2 = tf.Variable(tf.ones([B]))
+        beta2 = tf.Variable(tf.zeros([B]))
+        BN2 = tf.nn.batch_normalization(conv2, batch_mean2, batch_var2, beta2, scale2, epsilon)
+        # conv2 = tf.nn.sigmoid(BN2)
+    conv2 = tf.nn.relu(conv2)
     conv2 = maxpool2d(conv2)
 
-    conv3 = tf.nn.relu(conv2d(conv2, weights['W_conv3']) + biases['b_conv3'])
-    # conv3, update_ema3 = batchnorm(conv2, tst, iter, biases['b_conv1'])
+    conv3 = conv2d(conv2, weights['W_conv3']) + biases['b_conv3']
+    if to_batch_normalize:
+        batch_mean3, batch_var3 = tf.nn.moments(conv3, [0])
+        scale3 = tf.Variable(tf.ones([C]))
+        beta3 = tf.Variable(tf.zeros([C]))
+        BN3 = tf.nn.batch_normalization(conv3, batch_mean3, batch_var3, beta3, scale3, epsilon)
+        # conv3 = tf.nn.sigmoid(BN3)
+    conv3 = tf.nn.relu(conv3)
     conv3 = maxpool2d(conv3)
 
     fc_shape = int(conv3.get_shape().as_list()[1] * conv3.get_shape().as_list()[2] * conv3.get_shape().as_list()[3])
+
+
+
     weights['W_fc'] = tf.Variable(tf.random_normal([fc_shape, 1024]))
 
     # update_ema = tf.group(update_ema1, update_ema2, update_ema3)
@@ -284,7 +309,7 @@ def train_neural_network(x):
                 epoch = 0
         else:
             epoch = 0
-        lr_rate = 0.005
+        # lr_rate = 0.005
         while epoch < hm_epochs:
             # saved_epoch =tf.train.global_step(sess, global_step)
             epoch += 1
@@ -292,8 +317,8 @@ def train_neural_network(x):
 
             if epoch != 1:
                 if epoch % 10 == 0:
-                    model_validation_x = np.array(test_x)[0:test_limits]
-                    model_validation_y = np.array(test_y)[0:test_limits]
+                    model_validation_x = np.array(test_x)[0:5*test_limits]
+                    model_validation_y = np.array(test_y)[0:5*test_limits]
                     correct = tf.equal(tf.argmax(prediction, 1), tf.argmax(y, 1))
                     accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
                     tn_accuracy = accuracy.eval(
@@ -331,10 +356,10 @@ def train_neural_network(x):
                     batch_x = batch_x.reshape((m_batch_size, image_width, image_height, channels))
 
                     steps = tf.train.global_step(sess, global_step)
-                    if steps > annealer:
-                        lr_rate /= 10
-                        annealer += annealer
-                        print('Changing learning rate to ', lr_rate)
+                    # if steps > annealer:
+                        # lr_rate /= 10
+                      #  annealer += annealer
+                        #print('Changing learning rate to ', lr_rate)
                     _, c = sess.run([optimizer, cost], feed_dict={x: batch_x, y: batch_y})
                     epoch_loss += c
                     batch_start_marker = batch_end_marker
@@ -342,18 +367,11 @@ def train_neural_network(x):
             print('Epoch', epoch, 'completed out of', hm_epochs, 'loss:',
                   epoch_loss)
 
-            # save model
-            if to_save_models:
-                this_models_dir = os.path.join(models_dir, str(epoch))
-                if not os.path.exists(this_models_dir):
-                    os.mkdir(this_models_dir)
-
-                saver.save(sess, os.path.join(this_models_dir, 'm_model.ckpt'))
         end_t = dt.datetime.now()
         print('Total time for training: ', str(end_t - start_t), 'for :', int(len(train_x) / batch_size), 'batches')
 
-        validate_x = np.array(train_x)[0:test_limits]
-        validate_y = np.array(train_y)[0:test_limits]
+        validate_x = np.array(train_x)[0:5*test_limits]
+        validate_y = np.array(train_y)[0:5*test_limits]
         tn_accuracy = accuracy.eval({x: validate_x.reshape(-1, image_width, image_height, channels), y: validate_y})
         print('Train Accuracy:', tn_accuracy)
 
@@ -366,14 +384,24 @@ def train_neural_network(x):
             m_log.write('-------------------------------------------------------------------------')
             m_log.write(str(dt.datetime.now()) + '\n')
             m_log.write(
-                'Trained ' + str(os.path.basename(__file__)) + 'for: ' + str(end_t - start_t) + 'n_epochs: ' + str(
+                'Trained ' + str(os.path.basename(__file__)) + 'for: ' + str(end_t - start_t) + ' n_epochs: ' + str(
                     hm_epochs) + 'rnn_size: ' + str(
                     rnn_size) + 'chunk_size: ' + str(chunk_size) + '\n')
             m_log.write('train_accuracy: ' + str(tn_accuracy) + '\n')
             m_log.write(str(os.path.basename(__file__)) + ' test_accuracy: ' + str(test_accuracy) + ' \n')
             if to_save_models:
-                m_log.write('Latest model saved as:' + str(this_models_dir))
+                # m_log.write('Latest model saved as:' + str(this_models_dir))
+                pass
             m_log.write('-------------------------------------------------------------------------')
+
+        #saving final model
+        if to_save_models:
+            this_models_dir = os.path.join(models_dir, str(epoch))
+            if not os.path.exists(this_models_dir):
+                os.mkdir(this_models_dir)
+            print('Saving model at:', this_models_dir)
+            saver.save(sess, os.path.join(this_models_dir, 'm_model' + str(epoch) + str(test_accuracy) + '.ckpt'))
+
 
 
 if __name__ == '__main__':

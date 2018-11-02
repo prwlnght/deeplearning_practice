@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="491e9535-19b0-4fe8-a4c6-9f32fb6bf576" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/tfflow_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tfflow_practice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grusi_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/grusi_cnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grusi_images_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/grusi_images_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grusi_images_to_pickles.py" beforeDir="false" afterPath="$PROJECT_DIR$/grusi_images_to_pickles.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +18,7 @@
     <SUITE FILE_PATH="coverage/tfflow_practice$asl_sings.coverage" NAME="asl_sings Coverage Results" MODIFIED="1530304441045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tfflow_practice$sentdex_custom_data.coverage" NAME="sentdex_custom_data Coverage Results" MODIFIED="1532019851078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_rnn.coverage" NAME="grusi_rnn Coverage Results" MODIFIED="1533769046145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_cnn_titan.coverage" NAME="grusi_cnn_titan Coverage Results" MODIFIED="1534521221773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_cnn_titan.coverage" NAME="grusi_cnn_titan Coverage Results" MODIFIED="1534529986640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run.coverage" NAME="Local_run Coverage Results" MODIFIED="1534456840876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run_cnn.coverage" NAME="Local_run_cnn Coverage Results" MODIFIED="1533769634477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_cnn.coverage" NAME="grusi_cnn Coverage Results" MODIFIED="1534314026779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -40,14 +37,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="grusi_cnn.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grusi_cnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grusi_cnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="97" column="55" lean-forward="true" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
+            <state relative-caret-position="6477">
+              <caret line="392" column="78" selection-start-line="392" selection-start-column="78" selection-end-line="392" selection-end-column="78" />
               <folding>
                 <element signature="e#983#1006#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resources_unix.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources_unix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resources_windows.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources_windows.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28271">
+              <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-813085004/-1516709007/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5236">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
         </entry>
@@ -64,8 +97,8 @@
       <file leaf-file-name="grusi_images_to_pickles.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grusi_images_to_pickles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="1190">
+              <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
               <folding>
                 <element signature="e#129#138#0" expanded="true" />
               </folding>
@@ -94,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pickle</find>
       <find>shuffle</find>
       <find>epoch_x</find>
       <find>models_dir</find>
@@ -124,6 +156,7 @@
       <find>log</find>
       <find>placeholder</find>
       <find>global_step</find>
+      <find>n_epochs</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -178,8 +211,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="296" />
+    <option name="x" value="-3848" />
+    <option name="y" value="309" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -197,11 +230,6 @@
             <path>
               <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeplearning_practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deeplearning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
@@ -232,7 +260,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/grusi_cnn.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -552,38 +580,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="296" width="1936" height="1056" extended-state="6" />
+    <frame x="-3848" y="309" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32924107" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50104165" side_tool="true" visible="true" weight="0.01594049" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.01594049" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.5016234" side_tool="true" visible="true" weight="0.019791666" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.49895832" visible="true" weight="0.01594049" />
+      <window_info anchor="bottom" x="0" y="0" width="1050" height="1640" id="Run" order="2" type="FLOATING" weight="0.35622317" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32924107" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.38304722" />
-      <window_info active="true" anchor="bottom" x="0" y="0" width="1050" height="1640" id="Run" order="2" type="FLOATING" visible="true" weight="0.35622317" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49895832" weight="0.32412326" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49791667" weight="0.32412326" />
       <window_info x="-1214" y="373" width="619" height="918" id="Remote Host" order="3" sideWeight="0.49837664" weight="0.18613139" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18333334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3015625" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" x="0" y="23" width="1050" height="1617" id="SciView" order="4" type="WINDOWED" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="top" auto_hide="true" x="0" y="0" width="1050" height="1640" id="Debug" order="0" type="FLOATING" weight="0.3995749" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="top" auto_hide="true" x="0" y="0" width="1920" height="1160" id="Debug" order="0" type="FLOATING" weight="0.3995749" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4984375" visible="true" weight="0.01594049" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" x="8" y="45" width="1022" height="1610" id="Run" order="2" type="FLOATING" visible="true" weight="0.35622317" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info x="-1214" y="373" width="619" height="918" id="Remote Host" order="3" sideWeight="0.49837664" weight="0.18613139" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3295099" />
@@ -592,7 +620,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32924107" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32924107" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info active="true" anchor="bottom" x="8" y="45" width="1022" height="1610" id="Run" order="2" type="FLOATING" visible="true" weight="0.35622317" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.5016234" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="3" />
@@ -665,19 +693,14 @@
           <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
-          <line>333</line>
-          <option name="timeStamp" value="222" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/grusi_images_to_pickles.py</url>
           <line>158</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
-          <line>365</line>
-          <option name="timeStamp" value="224" />
+          <line>379</line>
+          <option name="timeStamp" value="229" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -690,17 +713,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="225" />
+      <option name="time" value="231" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/encodings/cp1252.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asl_sings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -736,13 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22644">
           <caret line="1371" selection-start-line="1371" selection-end-line="1371" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28271">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
         </state>
       </provider>
     </entry>
@@ -951,20 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources_windows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources_unix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="96" selection-start-line="2" selection-start-column="96" selection-end-line="2" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -979,29 +974,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grusi_images_to_pickles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="e#129#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/grusi/run_logs.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/run_logs.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/grusi_images_to_pickles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+          <folding>
+            <element signature="e#129#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-813085004/-1516709007/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5236">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28271">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources_windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grusi_cnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="97" column="55" lean-forward="true" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
+        <state relative-caret-position="6477">
+          <caret line="392" column="78" selection-start-line="392" selection-start-column="78" selection-end-line="392" selection-end-column="78" />
           <folding>
             <element signature="e#983#1006#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources_unix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
         </state>
       </provider>
     </entry>

@@ -2,14 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="491e9535-19b0-4fe8-a4c6-9f32fb6bf576" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tfflow_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tfflow_practice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grusi_images_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/grusi_images_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grusi_images_to_pickles.py" beforeDir="false" afterPath="$PROJECT_DIR$/grusi_images_to_pickles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grusi_rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/grusi_rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources_unix.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources_unix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyses.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/analyses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asl_sings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/asl_sings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avatardata_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/avatardata_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu_test_and_execute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/gpu_test_and_execute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusi_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/grusi_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusi_images_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/grusi_images_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusi_images_to_pickles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/grusi_images_to_pickles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusi_rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/grusi_rnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grusi_rnn_rawdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/grusi_rnn_rawdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/model.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/remote_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/remote_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_unix.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/resources_unix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/resources_windows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnn_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/rnn_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runloigs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/runloigs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saving_and_resotring.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/saving_and_resotring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/senddex_custom_NN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/senddex_custom_NN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/senddex_custom_NN_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/senddex_custom_NN_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/senddex_custom_NN_custom_millions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/senddex_custom_NN_custom_millions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentdex.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/sentdex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentdex_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/sentdex_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentdex_cnn_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/sentdex_cnn_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentdex_custom_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/sentdex_custom_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentdex_custom_data_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/sentdex_custom_data_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentdex_custom_data_millions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/sentdex_custom_data_millions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/this.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/this.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic_signs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/traffic_signs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transpose_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tutorials/transpose_example.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,67 +49,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tfflow_practice$senddex_custom_NN.coverage" NAME="senddex_custom_NN Coverage Results" MODIFIED="1532111025004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$sentdex_custom_data_millions.coverage" NAME="sentdex_custom_data_millions Coverage Results" MODIFIED="1532981815506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_images_to_pickles.coverage" NAME="grusi_images_to_pickles Coverage Results" MODIFIED="1533938469311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$senddex_custom_NN_custom_millions.coverage" NAME="senddex_custom_NN_custom_millions Coverage Results" MODIFIED="1533072868089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run.coverage" NAME="Local_run Coverage Results" MODIFIED="1533963803879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_images_preprocess.coverage" NAME="grusi_images_preprocess Coverage Results" MODIFIED="1533940418654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run_rnn.coverage" NAME="Local_run_rnn Coverage Results" MODIFIED="1533767104709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$local_Trials.coverage" NAME="local_Trials Coverage Results" MODIFIED="1533927427613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$rnn_example.coverage" NAME="rnn_example Coverage Results" MODIFIED="1533240418557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$senddex_custom_NN.coverage" NAME="senddex_custom_NN Coverage Results" MODIFIED="1532111025004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run_cnn.coverage" NAME="Local_run_cnn Coverage Results" MODIFIED="1533769634477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$1.coverage" NAME="1 Coverage Results" MODIFIED="1530226335220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tfflow_practice$asl_sings.coverage" NAME="asl_sings Coverage Results" MODIFIED="1530304441045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_image_preprocess.coverage" NAME="Local_image_preprocess Coverage Results" MODIFIED="1533942064507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$traffic_signs.coverage" NAME="traffic_signs Coverage Results" MODIFIED="1530311889212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$analyses.coverage" NAME="analyses Coverage Results" MODIFIED="1533156374320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$base_rnn.coverage" NAME="base_rnn Coverage Results" MODIFIED="1541052691971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/bone_dance" />
+    <SUITE FILE_PATH="coverage/tfflow_practice$sentdex_custom_data_1.coverage" NAME="sentdex_custom_data_1 Coverage Results" MODIFIED="1532111725498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deeplearning_practice$tfflow_practice.coverage" NAME="tfflow_practice Coverage Results" MODIFIED="1541049701044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/tfflow_practice$sentdex_custom_data.coverage" NAME="sentdex_custom_data Coverage Results" MODIFIED="1532019851078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_rnn.coverage" NAME="grusi_rnn Coverage Results" MODIFIED="1533769046145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_cnn_titan.coverage" NAME="grusi_cnn_titan Coverage Results" MODIFIED="1533943741036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run.coverage" NAME="Local_run Coverage Results" MODIFIED="1533963803879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run_cnn.coverage" NAME="Local_run_cnn Coverage Results" MODIFIED="1533769634477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tfflow_practice$traffic_signs.coverage" NAME="traffic_signs Coverage Results" MODIFIED="1530311889212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tfflow_practice$sentdex_custom_data_millions.coverage" NAME="sentdex_custom_data_millions Coverage Results" MODIFIED="1532981815506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tfflow_practice$1.coverage" NAME="1 Coverage Results" MODIFIED="1530226335220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tfflow_practice$sentdex_custom_data_1.coverage" NAME="sentdex_custom_data_1 Coverage Results" MODIFIED="1532111725498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_images_preprocess.coverage" NAME="grusi_images_preprocess Coverage Results" MODIFIED="1533940418654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$rnn_example.coverage" NAME="rnn_example Coverage Results" MODIFIED="1533240418557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_image_preprocess.coverage" NAME="Local_image_preprocess Coverage Results" MODIFIED="1533942064507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$grusi_images_to_pickles.coverage" NAME="grusi_images_to_pickles Coverage Results" MODIFIED="1533938469311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tfflow_practice$analyses.coverage" NAME="analyses Coverage Results" MODIFIED="1533156374320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deeplearning_practice$rnn_example_self_data.coverage" NAME="rnn_example_self_data Coverage Results" MODIFIED="1533660573759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tfflow_practice$senddex_custom_NN_custom_millions.coverage" NAME="senddex_custom_NN_custom_millions Coverage Results" MODIFIED="1533072868089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deeplearning_practice$Local_run_rnn.coverage" NAME="Local_run_rnn Coverage Results" MODIFIED="1533767104709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="senddex_custom_NN_custom_millions.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/senddex_custom_NN_custom_millions.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="273">
-                    <caret line="130" column="21" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="21" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="grusi_images_to_pickles.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grusi_images_to_pickles.py">
+      <file leaf-file-name="base_rnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bone_dance/base_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="154" column="26" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="26" />
+            <state relative-caret-position="538">
+              <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
               <folding>
-                <element signature="e#129#138#0" expanded="true" />
-                <element signature="e#1039#1991#0" />
-                <element signature="e#2367#2747#0" />
+                <element signature="e#704#728#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="grusi_rnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grusi_rnn.py">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
+            <state relative-caret-position="-1806">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
                 <element signature="e#983#1006#0" expanded="true" />
               </folding>
@@ -87,11 +98,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grusi_cnn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grusi_cnn.py">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="122" column="45" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resources_unix.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/resources_unix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grusi_cnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="168" column="33" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="33" />
               <folding>
                 <element signature="e#983#1006#0" expanded="true" />
               </folding>
@@ -99,51 +128,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ops.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/ops.py">
+      <file leaf-file-name="senddex_custom_NN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/senddex_custom_NN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="617" selection-start-line="617" selection-end-line="617" />
+            <state relative-caret-position="182">
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saving_and_resotring.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saving_and_resotring.py">
+      <file leaf-file-name="sentdex.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pydevd_exec2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_exec2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tf.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmp/tf.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="310" selection-start-line="310" selection-end-line="310" />
+            <state relative-caret-position="225">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="sentdex_cnn_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sentdex_cnn_example.py">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_cnn_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
+            <state relative-caret-position="-148">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -152,14 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grusi_images_preprocess.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grusi_images_preprocess.py">
+      <file leaf-file-name="sentdex_custom_data_millions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_custom_data_millions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="e#107#116#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="43">
+              <caret line="98" column="18" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -170,6 +173,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -184,7 +188,6 @@
       <find>hm_epochs</find>
       <find>tmp_dir</find>
       <find>classes</find>
-      <find>pickle</find>
       <find>shuffle</find>
       <find>epoch_x</find>
       <find>models_dir</find>
@@ -198,6 +201,8 @@
       <find />
       <find>save</find>
       <find>n_chunks</find>
+      <find>pickle</find>
+      <find>save_as_pickle</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -223,7 +228,6 @@
         <option value="$PROJECT_DIR$/senddex_custom_NN_custom_millions.py" />
         <option value="$PROJECT_DIR$/gpu_test_and_execute.py" />
         <option value="$PROJECT_DIR$/analyses.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/transpose_example.py" />
         <option value="$PROJECT_DIR$/rnn_example.py" />
         <option value="$PROJECT_DIR$/resources_windows.py" />
@@ -239,6 +243,10 @@
         <option value="$PROJECT_DIR$/grusi_images_preprocess.py" />
         <option value="$PROJECT_DIR$/grusi_images_to_pickles.py" />
         <option value="$PROJECT_DIR$/grusi_cnn.py" />
+        <option value="$PROJECT_DIR$/src/bone_animate.py" />
+        <option value="$PROJECT_DIR$/src/bone_dance/base_rnn_nb.ipynb" />
+        <option value="$PROJECT_DIR$/src/bone_dance/base_rnn.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -251,10 +259,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="700" />
-    <option name="width" value="1227" />
-    <option name="height" value="1167" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -274,24 +282,12 @@
             <path>
               <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeplearning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deeplearning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="grusi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeplearning_practice" type="462c0819:PsiDirectoryNode" />
               <item name="tmp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deeplearning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deeplearning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
-              <item name="grusi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,10 +304,10 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/grusi_images_to_pickles.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -333,11 +329,13 @@
     <option name="myShowDebugConsoleByDefault" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tmp/models" />
+      <recent name="$PROJECT_DIR$/src/tutorials" />
+      <recent name="C:\Users\ppaudyal\workspace\tfflow_practice\tmp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ppaudyal\workspace\tfflow_practice" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ppaudyal\workspace\tfflow_practice\tmp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,11 +350,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Local_run">
+  <component name="RunManager" selected="Python.base_rnn">
+    <configuration name="tfflow_practice" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="tfflow_practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+    </configuration>
     <configuration name="Local_image_preprocess" type="PythonConfigurationType" factoryName="Python">
       <module name="tfflow_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\ppaudyal\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -373,6 +391,9 @@
       <module name="tfflow_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\ppaudyal\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -389,13 +410,16 @@
       <module name="tfflow_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\ppaudyal\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentdex_cnn_example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorials/sentdex_cnn_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -405,6 +429,9 @@
       <module name="tfflow_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\ppaudyal\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -433,6 +460,25 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="base_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tfflow_practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/bone_dance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/bone_dance/base_rnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
@@ -520,13 +566,16 @@
       <module name="tfflow_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\ppaudyal\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saving_and_resotring.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorials/saving_and_resotring.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -545,26 +594,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saving_and_resotring.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="sentdex_cnn_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tfflow_practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentdex_cnn_example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tutorials/saving_and_resotring.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -578,18 +608,19 @@
       <item itemvalue="Python.Local_run_cnn" />
       <item itemvalue="Python.grusi_cnn_titan" />
       <item itemvalue="Python.grusi_rnn" />
-      <item itemvalue="Python.sentdex_cnn_example" />
       <item itemvalue="Python.grusi_images_preprocess" />
       <item itemvalue="Python.grusi_images_to_pickles" />
       <item itemvalue="Python.saving_and_resotring" />
+      <item itemvalue="Python.base_rnn" />
+      <item itemvalue="Jupyter Notebook.tfflow_practice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base_rnn" />
         <item itemvalue="Python.grusi_images_preprocess" />
         <item itemvalue="Python.grusi_images_to_pickles" />
         <item itemvalue="Python.saving_and_resotring" />
         <item itemvalue="Python.grusi_rnn" />
-        <item itemvalue="Python.sentdex_cnn_example" />
       </list>
     </recent_temporary>
   </component>
@@ -616,58 +647,59 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="958" y="14" width="1227" height="1167" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1173" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.32924107" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3134963" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.5016234" side_tool="true" weight="0.32995737" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.328125" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32924107" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.33935362" />
-      <window_info anchor="bottom" x="0" y="23" width="1920" height="1137" id="Run" order="2" type="WINDOWED" weight="0.35706696" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.328125" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32924107" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3134963" />
+      <window_info anchor="right" x="0" y="0" width="310" height="677" id="Documentation" order="5" sideWeight="0.5016234" side_tool="true" weight="0.20713525" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924107" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.048117153" />
+      <window_info anchor="bottom" x="0" y="23" width="1920" height="1137" id="Run" order="2" weight="0.3169145" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18494424" />
       <window_info x="-1214" y="373" width="619" height="918" id="Remote Host" order="3" sideWeight="0.49837664" weight="0.18656716" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2140575" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="right" x="0" y="23" width="1050" height="1617" id="SciView" order="4" type="WINDOWED" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="top" auto_hide="true" x="106" y="31" width="869" height="1128" id="Debug" order="0" type="WINDOWED" visible="true" weight="0.3995749" />
+      <window_info anchor="bottom" x="-2840" y="-81" width="869" height="1031" id="Debug" order="3" type="WINDOWED" weight="0.39853558" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.328125" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21145834" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32924107" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info x="-1214" y="373" width="619" height="918" id="Remote Host" order="3" sideWeight="0.49837664" weight="0.18656716" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2140575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="0" y="23" width="1050" height="1617" id="Run" order="2" type="WINDOWED" visible="true" weight="0.35706696" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="top" auto_hide="true" x="-3840" y="317" width="1920" height="1040" id="Debug" order="0" type="FLOATING" visible="true" weight="0.3995749" />
-      <window_info anchor="right" x="0" y="0" width="193" height="967" id="Documentation" order="6" side_tool="true" visible="true" weight="0.10989583" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32943678" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32924107" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="right" x="0" y="23" width="1050" height="1617" id="SciView" order="5" type="WINDOWED" weight="0.3296875" />
+      <window_info anchor="bottom" x="0" y="23" width="1920" height="1137" id="Run" order="2" type="WINDOWED" weight="0.35706696" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="top" auto_hide="true" x="106" y="31" width="869" height="1128" id="Debug" order="0" type="WINDOWED" weight="0.3995749" />
+      <window_info anchor="right" x="0" y="0" width="310" height="677" id="Documentation" order="5" sideWeight="0.5016234" side_tool="true" weight="0.20713525" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.328125" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3134963" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="right" x="0" y="23" width="1050" height="1617" id="SciView" order="4" type="WINDOWED" weight="0.3296875" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.328125" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.048117153" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,77 +715,77 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/asl_sings.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/asl_sings.py</url>
           <line>62</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/traffic_signs.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/traffic_signs.py</url>
           <line>27</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/asl_sings.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/asl_sings.py</url>
           <line>36</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/senddex_custom_NN.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/senddex_custom_NN.py</url>
           <line>3</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sentdex_custom_data_1.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/sentdex_custom_data_1.py</url>
           <line>98</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/senddex_custom_NN_custom_millions.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/senddex_custom_NN_custom_millions.py</url>
           <line>176</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/analyses.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/analyses.py</url>
           <line>25</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rnn_example.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/rnn_example.py</url>
           <line>65</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_images_preprocess.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_images_preprocess.py</url>
           <line>59</line>
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py</url>
           <line>241</line>
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py</url>
           <line>140</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py</url>
           <line>110</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py</url>
           <line>131</line>
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_images_to_pickles.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_images_to_pickles.py</url>
           <line>153</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/grusi_cnn.py</url>
+          <url>file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py</url>
           <line>300</line>
           <option name="timeStamp" value="182" />
         </line-breakpoint>
@@ -768,35 +800,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="185" />
+      <option name="time" value="189" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Application Data/SSH/temp/gen_traintest_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/encodings/cp1252.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asl_sings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/avatardata_preprocess.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/avatardata_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
@@ -810,27 +818,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="1951" selection-start-line="1951" selection-end-line="1951" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/util/deprecation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="249" selection-start-line="249" selection-end-line="249" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22644">
-          <caret line="1371" selection-start-line="1371" selection-end-line="1371" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/ops/nn_ops.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/util/deprecation.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/training/saver.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28271">
@@ -838,77 +828,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="491" selection-start-line="491" selection-end-line="491" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentdex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentdex_custom_data.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/ntpath.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/numpy/core/numeric.py" />
+    <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_custom_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="1334" selection-start-line="1334" selection-end-line="1334" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gpu_test_and_execute.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py" />
+    <entry file="file://$PROJECT_DIR$/src/tutorials/gpu_test_and_execute.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/analyses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" lean-forward="true" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transpose_example.py">
+    <entry file="file://$USER_HOME$/Desktop/analyses.py" />
+    <entry file="file://$PROJECT_DIR$/src/tutorials/transpose_example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/op_def_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="509" selection-start-line="509" selection-end-line="509" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rnn_example.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/op_def_library.py" />
+    <entry file="file://$PROJECT_DIR$/src/tutorials/rnn_example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="65" column="108" lean-forward="true" selection-start-line="65" selection-start-column="108" selection-end-line="65" selection-end-column="108" />
@@ -920,96 +866,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e14_uAbout100520AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e12_uAbout100506AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e10_uAbout100452AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e6_uAbout100423AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e5_uAbout100415AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e4_uAbout100407AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e3_uAbout100359AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e2_uAbout100349AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e1_uAbout100233AM.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/run_logs.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentdex_custom_data_millions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="128" column="11" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentdex_1.py">
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e14_uAbout100520AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e12_uAbout100506AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e10_uAbout100452AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e6_uAbout100423AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e5_uAbout100415AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e4_uAbout100407AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e3_uAbout100359AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e2_uAbout100349AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/data/grusi/figures_grayscale/a0/a0_about_sG02_e1_uAbout100233AM.jpeg" />
+    <entry file="file://$PROJECT_DIR$/tmp/run_logs.log" />
+    <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources_windows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources_unix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="96" selection-start-line="2" selection-start-column="96" selection-end-line="2" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyses.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/analyses.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remote_test.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/remote_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/senddex_custom_NN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/senddex_custom_NN_1.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/senddex_custom_NN_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentdex_custom_data_1.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_custom_data_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="898">
           <caret line="86" column="95" lean-forward="true" selection-start-line="86" selection-start-column="95" selection-end-line="86" selection-end-column="95" />
@@ -1019,74 +914,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grusi_rnn_rawdata.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_rnn_rawdata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/tf.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grusi_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
-          <folding>
-            <element signature="e#983#1006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/tmp/tf.log" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_exec2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/senddex_custom_NN_custom_millions.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/saving_and_resotring.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="130" column="21" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saving_and_resotring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="315">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/ops.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/ops.py" />
+    <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_images_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="617" selection-start-line="617" selection-end-line="617" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentdex_cnn_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grusi_images_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
+        <state relative-caret-position="840">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="e#107#116#0" expanded="true" />
@@ -1094,25 +948,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grusi_images_to_pickles.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_images_to_pickles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
+        <state relative-caret-position="879">
           <caret line="154" column="26" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="26" />
           <folding>
             <element signature="e#129#138#0" expanded="true" />
-            <element signature="e#1039#1991#0" />
-            <element signature="e#2367#2747#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grusi_cnn.py">
+    <entry file="file://$PROJECT_DIR$/src/tutorials/senddex_custom_NN_custom_millions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="122" column="45" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+        <state relative-caret-position="273">
+          <caret line="130" column="21" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/resources_windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bone_animate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/resources_unix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bone_dance/base_rnn_nb.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="168" column="33" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="33" />
           <folding>
             <element signature="e#983#1006#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/senddex_custom_NN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_cnn_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/sentdex_custom_data_millions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="98" column="18" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bone_dance/base_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+          <folding>
+            <element signature="e#704#728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tutorials/grusi_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1806">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#983#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>

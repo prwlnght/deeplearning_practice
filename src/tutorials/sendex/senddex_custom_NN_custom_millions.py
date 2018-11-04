@@ -10,7 +10,7 @@ optimizer to adjust the gradients
 # from tensorflow.examples.tutorials.mnist import input_data
 
 # mnist = input_data.read_data_sets("tmp/data/", one_hot=True)  # one component is on and rest is off
-from src.tutorials.sentdex_custom_data_millions import *
+from src.tutorials.sendex.sentdex_custom_data_millions import *
 import pickle
 
 n_nodes_hl1 = 500
